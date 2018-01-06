@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "description": "description project",
   "scripts": {
-    "start": "webpack --config ./webpack/dev.config.js --watch --debug --progress"
+    "start": "webpack-dev-server --config ./webpack/dev.config.js --open",
+    "watch": "webpack --config ./webpack/dev.config.js --watch --debug --progress"
   },
   "author": "@kassyn",
   "license": "MIT",
@@ -19,7 +20,9 @@
     "eslint-config-standard": "^11.0.0-beta.0",
     "eslint-config-standard-react": "^5.0.0",
     "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-react": "^7.5.1",
     "eslint-plugin-standard": "^3.0.1",
